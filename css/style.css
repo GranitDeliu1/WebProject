@@ -4,16 +4,13 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Titillium Web', sans-serif;
-    background-image: url(background3.gif);
-    background-size: cover;
 }
 
 #main-div{
     width: 1000px;
-    height: 1000px;
+    height: auto;
     margin-top: 10px;
-    background-color:rgb(rgb(56, 14, 14), green, blue);
-    
+    background-color:#333;
 }
 
 #nav-bar{
@@ -39,11 +36,13 @@ body{
     height: 81%;
     border: 2px solid saddlebrown;
     margin-top: 7px;
-    
 }
+
 ul{
     display: flex;
+    justify-content: center;
     column-gap: 30px;
+    margin-top: 10px;
 }
 
 ul a{
@@ -58,21 +57,11 @@ ul a{
 }
 
 #chat{
-    width: 25%;
+    width: 29%;
     height: auto;
     margin-top: 10px;
     border: 2px solid saddlebrown;
     margin-right: 47px;
-    display: block;
-}
-#chats label{
-    color: cyan;
-}
-#chats >textarea{
-    background-color: inherit;
-    border-radius: 7px ;
-    color: white;
-    width: 230px;
 }
 
 #main-posts{
@@ -86,12 +75,10 @@ ul a{
 #footer{
     width: 90%;
     height: 100px;
-    margin: auto;
     margin-top: 10px;
     border: 2px solid white;
     display: flex;
     justify-content: space-around;
-    position: relative;
 }
 
 #list2{
@@ -109,14 +96,65 @@ ul a{
     justify-content: center;
 }
 
-ul>a:hover{
-    background-color: gray;
-    padding: 3px;
-    border-radius: 3px;
-}
-
 #ul1 a{
     color: white;
     text-decoration: none;
     list-style-type: none;
+}
+  
+#wrapper {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+}
+   
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 300px;
+    max-width: 230px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+}
+   
+#usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    width: 195px;
+    margin-left: 10px;
+}
+   
+#name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+}
+   
+#submitmsg{
+    background: #ff9800;
+    border: 2px solid #e65100;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+   
+#menu{
+    padding: 15px 25px;
+    display: flex;
+}
+   
+#menu p.welcome {
+    flex: 1;
 }
