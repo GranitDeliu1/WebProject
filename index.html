@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <div id="main-div">
         <div id="nav-bar">
             <div id="logo">
@@ -20,8 +19,8 @@
                 <ul>
                     <a href=""><li>Home</li></a>
                     <a href=""><li>About Us</li></a>
-                    <a href=""><li>Contact</li></a>
-                    <a href=""><li></li></a>
+                    <a href=""><li>Log In</li></a>
+                    <a href=""><li>Sign Up</li></a>
                 </ul>
             </div>
         </div>
@@ -33,12 +32,21 @@
 
             <div id="chat">
                 <div id="chats">
-                    <label>Username</label><br>
-                    <textarea placeholder="Click to chat!"></textarea><br>
-                   
+                    <div id="wrapper">
+                        <div id="menu">
+                            <p class="welcome">Welcome<b></b></p>
+                        </div>
+             
+                        <div id="chatbox"></div>
+             
+                        <form name="message" action="">
+                            <input name="usermsg" type="text" id="usermsg" />
+                            <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+                        </form>
+                    </div>
                 </div>
             </div>
-    </div>
+        </div>
         <div id="footer">
             <div id="list2">
                 <ul id="ul1">
