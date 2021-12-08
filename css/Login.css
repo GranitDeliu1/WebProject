@@ -1,0 +1,129 @@
+body{
+   background-color: black;
+  justify-content: center;
+   
+}
+#main{
+    justify-content: center;
+}
+h1{
+   margin-left: 500px;
+    color: violet;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: blue;
+}
+.first{
+    margin-left: 250px;
+}
+.first > select:hover{
+   opacity: 0.6;
+   transition-duration: 1s;
+}
+
+select{
+    opacity: 0.3;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px 
+    
+}
+
+option{
+    text-align: center;
+    color: blueviolet;
+    border-radius: 10px;
+    
+}
+
+label{
+    border-radius: 10px;
+    color:burlywood;
+}
+
+#in{
+    border-radius: 10px;
+    opacity: 0.3;
+    width: 150px;
+    height: 30px;
+    
+}
+.searchBar{
+    margin-left: 500px;
+}
+.LoginPart{
+    margin-left: 470px;
+    margin-top: 150px;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    border: solid black;
+    background-color: green;
+    
+    
+}
+.LoginInside{
+    border-radius: 10px;
+    display: flex;
+}
+#LoginP1, #LoginP2{
+    width: 40px;
+    margin: 50px;
+}
+#input2{
+    border-radius: 10px;
+    width: 250px;
+    height: 25px;
+    opacity: 0.6;
+    padding-right: 10px;
+    
+}
+#input1{
+    border-radius: 10px;
+    width: 250px;
+    height: 25px;
+    opacity: 0.6;
+    
+}
+select > option{
+    opacity: 0.3;
+}
+#Labels{
+    text-align: center;
+}
+#head{
+    text-align: center;
+    color: white;
+    margin-left: 85px;
+
+}
+#submit{
+    display: inline-flex;
+}
+.button{
+    cursor:pointer;
+    width: 87px;
+    height: 28px;
+    margin-top: 25px;
+    border-radius: 7px;
+    opacity: 0.7;
+}
+.button:hover{
+    background-color: burlywood;
+    transition-duration: 0.5;
+}
+.a{
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 50px;
+    color: white;
+    display: inline-flex;
+   
+    
+}
+.LoginPart> #input2:hover{
+    opacity: 0.3s;
+}
+
+
