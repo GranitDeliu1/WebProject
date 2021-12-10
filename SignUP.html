@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="css/SignUP.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
@@ -18,23 +18,25 @@
             <div id="logo">
                 <a href="index.html"><p>LOGO</p></a>
             </div>
-            <div id="search">
-                <input type="search" placeholder="Search"><br><a href=""><ion-icon name="search-outline"></ion-icon></a>
-            </div>
+
             <div id="list">
                 <ul>
                     <a href="index.html"><li>Home</li></a>
                     <a href=""><li>About Us</li></a>
                     <a href="Login.html"><li>Log In</li></a>
-                    <a href="SignUP.html"><li>Sign Up</li></a>
+                    
                 </ul>
             </div>
         </div>
     
         <div id="main">
             <div class="login-box">
-                <h2>Login</h2>
+                <h2>Sign Up</h2>
                 <form>
+                  <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Email</label>
+                  </div>
                   <div class="user-box">
                     <input type="text" name="" required="">
                     <label>Username</label>
@@ -43,9 +45,14 @@
                     <input type="password" name="" required="">
                     <label>Password</label>
                   </div>
+                  <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Confirm Password</label>
+                  </div>
                   
-                    <a id="b" href="#">Submit</a>
-                    <a id="b1" href="#">Forgot password</a>
+                  <a href="#">
+                    Confirm
+                  </a>
                   
                 </form>
               </div>

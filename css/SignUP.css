@@ -13,6 +13,7 @@ body{
 }
 
 #nav-bar{
+   
     width: 90%;
     height: 80px;
     margin: auto;
@@ -142,6 +143,7 @@ ul a:hover::after{
     color: #fff;
     text-align: center;
   }
+
   
   .login-box .user-box {
     position: relative;
@@ -190,22 +192,8 @@ ul a:hover::after{
     margin-top: 40px;
     letter-spacing: 4px
   }
- 
-  #b1{
-    margin-left: 10px;
-    font-size: 10px;
-    color: white;
-    border-bottom: 0px solid white;
-    
-  }
-  #b1:hover{
-    font-size: 10px;
-    color:white ;
-    border-bottom: 2px solid white;
-    transition: width .2s;
-  }
   
-  .login-box #b:hover {
+  .login-box a:hover {
     background: #1e9c20;
     color: #fff;
     border-radius: 5px;
