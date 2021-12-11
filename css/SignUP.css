@@ -144,7 +144,6 @@ ul a:hover::after{
     text-align: center;
   }
 
-  
   .login-box .user-box {
     position: relative;
   }
@@ -160,6 +159,7 @@ ul a:hover::after{
     outline: none;
     background: transparent;
   }
+
   .login-box .user-box label {
     position: absolute;
     top:0;
@@ -179,7 +179,7 @@ ul a:hover::after{
     font-size: 12px;
   }
   
-  .login-box form a {
+  .login-box form #a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -193,7 +193,7 @@ ul a:hover::after{
     letter-spacing: 4px
   }
   
-  .login-box a:hover {
+  .login-box #a:hover {
     background: #1e9c20;
     color: #fff;
     border-radius: 5px;
@@ -203,7 +203,7 @@ ul a:hover::after{
                 0 0 100px #1e9c20;
   }
   
-  .login-box a span {
+  .login-box #a span {
     position: absolute;
     display: block;
   }
@@ -226,7 +226,7 @@ ul a:hover::after{
     }
   }
   
-  .login-box a span:nth-child(2) {
+  .login-box #a span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -245,7 +245,7 @@ ul a:hover::after{
     }
   }
   
-  .login-box a span:nth-child(3) {
+  .login-box #a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -264,7 +264,7 @@ ul a:hover::after{
     }
   }
   
-  .login-box a span:nth-child(4) {
+  .login-box #a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -281,6 +281,39 @@ ul a:hover::after{
     50%,100% {
       bottom: 100%;
     }
+  }
+
+  #bg_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #bg_buttons #b{
+    color: white;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+  
+  #b{
+    color: white;
+    text-decoration: none;
+  }
+  
+  #b::after{
+    font-size: 10px;
+    color: white;
+    border-bottom: 0px solid white;
+    content: '';
+    border-bottom: 2px solid white;
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .2s;
+  }
+  
+  #b:hover::after{
+    width: 100%;
   }
 
 #footer{
