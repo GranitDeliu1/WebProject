@@ -14,23 +14,25 @@
 </head>
 <body>
     <div id="main-div">
-        <div id="nav-bar">
-            <div id="logo">
-                <a href="index.html"><p>LOGO</p></a>
-            </div>
-
-            <div id="list">
-                <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href=""><li>About Us</li></a>
-                    <a href="Login.html"><li>Log In</li></a>
-                    
-                </ul>
-            </div>
+      <div id="nav-bar">
+        <div id="logo">
+            <a href="index.html"><p>LOGO</p></a>
         </div>
+        <div id="search">
+            <input type="search" placeholder="Search"><br><a href=""><ion-icon name="search-outline"></ion-icon></a>
+        </div>
+        <div id="list">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href=""><li>About Us</li></a>
+                <a href="Login.html"><li>Log In</li></a>
+                <a href="SignUP.html"><li>Sign Up</li></a>
+            </ul>
+        </div>
+    </div>
     
         <div id="main">
-            <div class="login-box">
+            <div class="signup-box">
                 <h2>Sign Up</h2>
                 <form>
                   <div class="user-box">
@@ -50,10 +52,13 @@
                     <label>Confirm Password</label>
                   </div>
                   <div id="bg_buttons">
-                    <a href="" id="a">
-                      SUBMIT
+                    <a href="" id="a">SUBMIT
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
                     </a>
-                    <a href="" id="b">Alreay have an account? Log In</a>
+                    <a href="Login.html" id="b">Alreay have an account? Log In!</a>
                   </div>
                 </form>
               </div>

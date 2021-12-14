@@ -12,6 +12,8 @@ body{
     background-color:#333;
 }
 
+/* navbar header */
+
 #nav-bar{
     width: 90%;
     height: 80px;
@@ -129,6 +131,8 @@ ul a:hover::after{
     width: 100%;
 }
 
+/* posts and chat */
+
 #main-part{
     display: flex;
     justify-content: space-around;
@@ -175,12 +179,13 @@ ul a:hover::after{
     font-weight: 600;
 }
 
+/* chat */
+
 #chat{
     width: 29%;
     height: auto;
     margin-top: 10px;
     margin-right: 47px;
-    /* background-color: red; */
 }
 
 #wrapper {
@@ -204,13 +209,11 @@ ul a:hover::after{
     max-width: 230px;
     overflow: auto;
     border-radius: 4px;
-    /* border-bottom: 4px solid #666; */
 }
    
 #usermsg {
     flex: 1;
     height: 30px;
-    border-radius: 4px;
     width: 250px;
     margin-left: 20px;
     font-size: 16px;
@@ -247,6 +250,8 @@ ul a:hover::after{
     font-weight: 900;
     text-align: center;
 }
+
+/* footer */
 
 #footer{
     width: 90%;
