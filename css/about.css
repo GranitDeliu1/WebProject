@@ -1,0 +1,198 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* navbar header */
+
+#main-div{
+  width: 100%;
+  height: auto;
+  background-color:#333;
+}
+
+#nav-bar{
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #1e9c20;
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo{
+  width: 25%;
+  height: 81%;
+  margin-top: 7px;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 50px;
+}
+
+#logo p, img{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#logo img{
+  width: 200px; 
+  margin-left: -60px; 
+}
+ 
+#logo a{
+  color: white;
+  margin-left: -50px;
+} 
+
+#search{
+  width: 20%;
+  height: 81%;
+  margin-top: 7px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#search input{
+  height: 35px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid white;
+  width: 100%; 
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+::placeholder{
+  color: white;
+}
+
+#search a ion-icon{
+  font-size: 25px;
+  margin-left: 310px;
+  margin-top: 20px;
+  color: white;
+}
+
+#search a{
+  height: 0;
+}
+
+#search a:active{
+  color: white;
+}
+
+#list{
+  width: 50%;
+  height: 81%;
+  margin-top: 7px;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+ul a{
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 1.5%;
+  border-bottom: 0px solid white;
+  display: inline-block;
+}
+
+ul a::after{
+  content: '';
+  border-bottom: 2px solid white;
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width .2s;
+}
+
+ul a:hover::after{
+  width: 100%;
+}
+
+/* main part */
+
+#main-part{
+  height: auto;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.parallax {
+  height: 900px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#text p{
+  height: 150px;
+  font-size: 26px;
+  color: white;
+  font-weight: 900;
+  background-color: #1e9c20;
+  text-align: center;
+  /* margin: auto; */
+}
+
+/* footer */
+
+#footer{
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e9c20;
+  margin-bottom: 36px;
+}
+
+#list2{
+  width: 80%;
+  height: 81%;
+  justify-content: center;
+}
+
+#ul1{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#ul1 a{
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 1.5%;
+}
