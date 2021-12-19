@@ -1,4 +1,5 @@
 body{
+    max-width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,7 +22,7 @@ body{
     margin-top: 10px;
     background-color: #1e9c20;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 10px;
 }
 
@@ -56,10 +57,10 @@ body{
 } 
 
 #search{
-    width: 20%;
+    width: 40%;
     height: 81%;
     margin-top: 7px;
-    margin-left: 30px;
+    margin-left: 100px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -138,19 +139,236 @@ ul a:hover::after{
     width: 100%;
 }
 
-/* posts and chat */
+/* Menu */
+
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .p-menu1{
+      display: none;
+  }
+  
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    justify-items: center;
+    z-index: 120;
+    width: 400px;
+    float: right;
+    /* margin-right: 300px; */
+  }
+  
+  .hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 100px;
+  }
+
+.menu1 {
+    background-color: #1e9c20;
+    width: 250px;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: center;
+    z-index: -150;
+    height: 100px;
+  }
+  
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  @media only screen and (max-width: 1058px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    #logo{
+        margin-left: 100px;
+    }
+
+    #search{
+        margin-left: 150px;
+    }
+    
+    .p-menu1{
+        display: block;
+        margin-left: 100px;
+    }
+
+    .menu1{
+        margin-left: -100px;
+    }
+
+    #list{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    #search{
+        width: 25%;
+    }
+
+    #search a{
+        margin-left: -90px;
+    }
+
+    .menu1{
+        margin-left: -60px;
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 637px){
+    #search{
+        display: none;
+    }
+
+    .p-menu1{
+        margin-left: 250px;
+        margin-top: 7px;
+    }
+
+    .menu1{
+        width: 200px;
+    }
+}
+
+/* colors, posts and chat */
 
 #main-part{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 50px;
 }
 
+#colors{
+    height: 400px;
+    margin-left: 80px;
+}
+
+#colors button{
+    width: 100px;
+    display: block;
+    margin-top: 50%;
+    padding: 10px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+#colors button:nth-child(1){
+    background-color: inherit;
+    border: 2px solid darkorange;
+    box-shadow: 3px 3px 30px darkorange;
+    transition: 0.5s;
+}
+
+#colors button:nth-child(2){
+    background-color: inherit;
+    border: 2px solid #0310a1;
+    box-shadow: 3px 3px 30px #0310a1;
+    transition: 0.5s;
+}
+
+#colors button:nth-child(3){
+    background-color: inherit;
+    border: 2px solid #1e9c20;
+    box-shadow: 2px 2px 30px #1e9c20;
+    transition: 0.5s;
+}
+
+#colors button:nth-child(4){
+    background-color: inherit;
+    border: 2px solid #a11d00;
+    box-shadow: 2px 2px 30px #a11d00;
+    transition: 0.5s;
+}
+
+#colors button:nth-child(5){
+    background-color: inherit;
+    border: 2px solid #a60053;
+    box-shadow: 2px 2px 30px #a60053;
+    transition: 0.5s;
+}
+
+#colors button:nth-child(1):hover{
+    background-color: darkorange;
+}
+
+#colors button:nth-child(2):hover{
+    background-color: #0310a1;
+}
+
+#colors button:nth-child(3):hover{
+    background-color: #1e9c20;
+}
+
+#colors button:nth-child(4):hover{
+    background-color: #a11d00;
+}
+
+#colors button:nth-child(5):hover{
+    background-color: #a60053;
+}
+
 #main-posts{
-    width: 57%;
+    width: 50%;
     height: auto;
     margin-top: 10px;
-    margin-left: 47px;
+    margin-left: 200px;
 }
 
 #posts{
@@ -219,7 +437,6 @@ ul a:hover::after{
 }
    
 #usermsg {
-    flex: 1;
     height: 30px;
     width: 250px;
     margin-left: 20px;
@@ -258,6 +475,37 @@ ul a:hover::after{
     text-align: center;
 }
 
+@media only screen and (max-width: 1058px){
+    #main-part{
+        margin-top: 100px;
+    }
+
+    #wrapper{
+        max-width: 110%;
+    }
+
+    #chatbox{
+        max-width: 250px;
+    }
+
+    #usermsg{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    #usermsg{
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 637px){
+    #usermsg{
+        width: 96px;
+    }
+}
+
+
 /* footer */
 
 #footer{
@@ -272,7 +520,7 @@ ul a:hover::after{
     border-radius: 10px;
 }
 
-#list2{
+#list1{
     width: 80%;
     height: 81%;
     justify-content: center;
@@ -291,3 +539,15 @@ ul a:hover::after{
     list-style-type: none;
     margin-top: 1.5%;
 }
+
+@media only screen and (max-width: 637px){
+    #ul1{
+        font-size: 14px;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+}
+
+  
+  
+  

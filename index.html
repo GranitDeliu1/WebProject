@@ -12,7 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
+    <style>
+        .main-div2{
+            background-color: red;
+        }
+    </style>
 <body>
     <div id="main-div">
         <div id="nav-bar">
@@ -24,15 +31,40 @@
             </div>
             <div id="list">
                 <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="about.html"><li>About Us</li></a>
-                    <a href="Login.html"><li>Log In</li></a>
-                    <a href="SignUP.html"><li>Sign Up</li></a>
+                    <a href="index.html?" onsubmit="return false"><li>Home</li></a>
+                    <a href="about.html?" onsubmit="return false"><li>About Us</li></a>
+                    <a href="Login.html?" onsubmit="return false"><li>Log In</li></a>
+                    <a href="SignUP.html?" onsubmit="return false"><li>Sign Up</li></a>
                 </ul>
             </div>
+            <!-- <div id="list2"> -->
+                <section class="p-menu1">
+                    <nav id="navbar" class="navigation" role="navigation">
+                      <input id="toggle1" type="checkbox" />
+                      <label class="hamburger1" for="toggle1">
+                        <div class="top"></div>
+                        <div class="meat"></div>
+                        <div class="bottom"></div>
+                      </label>
+                    
+                      <nav class="menu1">
+                            <a class="link1" href="index.html"><li>Home</li></a>
+                            <a class="link1" href="about.html"><li>About Us</li></a>
+                            <a class="link1" href="Login.html"><li>Log In</li></a>
+                            <a class="link1" href="SignUP.html"><li>Sign Up</li></a>
+                      </nav>
+                  </nav>
+                  </section>
         </div>
 
         <div id="main-part">
+            <div id="colors">
+                <button class="color-btn" data-color="darkorange">Orange</button>
+                <button class="color-btn" data-color="#0310a1">Blue</button>
+                <button class="color-btn" data-color="#1e9c20">Green</button>
+                <button class="color-btn" data-color="#a11d00">Red</button>
+                <button class="color-btn" data-color="#a60053">Purple</button>
+            </div>
             <div id="main-posts">
                 <div id="posts">
                     <a href="#" id="add_posts">+</a>
@@ -56,7 +88,7 @@
             </div>
         </div>
         <div id="footer">
-            <div id="list2">
+            <div id="list1">
                 <ul id="ul1">
                     <a href=""><li>Google</li></a>
                     <a href=""><li>LinkedIn</li></a>

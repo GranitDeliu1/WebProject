@@ -1,28 +1,34 @@
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
+window.addEventListener('DOMContentLoaded', function() {
+    var cookieValue = getCookie('backgroundColor'),
+        btns = document.querySelectorAll('.color-btn');
+  
+    if (cookieValue) {
+      setBackgroundColor(cookieValue);
+    }
+    
+    Array.from(btns).forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var color = this.getAttribute('data-color');
+        setBackgroundColor(color);
+      });
+    });
+  });
+  
+  function setBackgroundColor(color) {
+    document.getElementById("nav-bar").style.backgroundColor = color;
+    document.getElementById("footer").style.backgroundColor = color;
+    setCookie('backgroundColor', color);
+  }
+  
+  function getCookie(name) {
+    var cookies = document.cookie.split(';'),
+        cookie = cookies.find(function(str) { return str.indexOf(name + '=') === 0; });
+    if (cookie) {
+      return cookie.split('=')[1];
+    }
+    return null;
+  }
+  
+  function setCookie(name, value) {
+    document.cookie = name + '=' + value;
+  }
