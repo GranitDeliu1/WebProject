@@ -17,6 +17,8 @@ window.addEventListener('DOMContentLoaded', function() {
   function setBackgroundColor(color) {
     document.getElementById("nav-bar").style.backgroundColor = color;
     document.getElementById("footer").style.backgroundColor = color;
+    document.getElementById("submitmsg").style.backgroundColor = color;
+    document.getElementById("submitmsg").style.border = color;
     setCookie('backgroundColor', color);
   }
   

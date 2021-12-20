@@ -312,35 +312,35 @@ a {
 #colors button:nth-child(1){
     background-color: inherit;
     border: 2px solid darkorange;
-    box-shadow: 3px 3px 30px darkorange;
+    box-shadow: 2px 2px 5px darkorange;
     transition: 0.5s;
 }
 
 #colors button:nth-child(2){
     background-color: inherit;
     border: 2px solid #0310a1;
-    box-shadow: 3px 3px 30px #0310a1;
+    box-shadow: 2px 2px 5px #0310a1;
     transition: 0.5s;
 }
 
 #colors button:nth-child(3){
     background-color: inherit;
     border: 2px solid #1e9c20;
-    box-shadow: 2px 2px 30px #1e9c20;
+    box-shadow: 2px 2px 5px #1e9c20;
     transition: 0.5s;
 }
 
 #colors button:nth-child(4){
     background-color: inherit;
     border: 2px solid #a11d00;
-    box-shadow: 2px 2px 30px #a11d00;
+    box-shadow: 2px 2px 5px #a11d00;
     transition: 0.5s;
 }
 
 #colors button:nth-child(5){
     background-color: inherit;
     border: 2px solid #a60053;
-    box-shadow: 2px 2px 30px #a60053;
+    box-shadow: 2px 2px 5px #a60053;
     transition: 0.5s;
 }
 
@@ -348,7 +348,15 @@ a {
     background-color: darkorange;
 }
 
+#colors button:nth-child(1):focus{
+    background-color: darkorange;
+}
+
 #colors button:nth-child(2):hover{
+    background-color: #0310a1;
+}
+
+#colors button:nth-child(2):focus{
     background-color: #0310a1;
 }
 
@@ -356,11 +364,23 @@ a {
     background-color: #1e9c20;
 }
 
+#colors button:nth-child(3):focus{
+    background-color: #1e9c20;
+}
+
 #colors button:nth-child(4):hover{
     background-color: #a11d00;
 }
 
+#colors button:nth-child(4):focus{
+    background-color: #a11d00;
+}
+
 #colors button:nth-child(5):hover{
+    background-color: #a60053;
+}
+
+#colors button:nth-child(5):focus{
     background-color: #a60053;
 }
 
