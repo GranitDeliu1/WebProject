@@ -15,22 +15,16 @@
 </head>
 <body>
     <div id="main-div">
-      <div id="nav-bar">
-        <div id="logo">
-          <a href="index.html"><p>Chattang<img src="img/logo.png" alt=""></p></a>
-        </div>
-        <div id="search">
-            <input type="search" placeholder="Search"><a href=""><ion-icon name="search-outline"></ion-icon></a>
-        </div>
-        <div id="list">
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="about.html"><li>About Us</li></a>
-                <a href="Login.html"><li>Log In</li></a>
-                <a href="SignUP.html"><li>Sign Up</li></a>
-            </ul>
-        </div>
-    </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" id="logo"><p id="logo">Chattang</p></a>
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link">About Us</a>
+        <a href="Login.html" class="link">Log In</a>
+        <a href="SignUP.html" class="link">Sign Up</a>
+
+        
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     
         <div id="main-part">
             <div class="signup-box">
@@ -54,10 +48,10 @@
                   </div>
                   <div id="bg_buttons">
                     <a href="" id="a">SUBMIT
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+                      <span id="span"></span>
+                      <span id="span1"></span>
+                      <span id="span2"></span>
+                      <span id="span3"></span>
                     </a>
                     <a href="Login.html" id="b">Alreay have an account? Log In!</a>
                   </div>
@@ -66,17 +60,17 @@
         </div>
 
         <div id="footer">
-            <div id="list2">
-                <ul id="ul1">
-                    <a href=""><li>Google</li></a>
-                    <a href=""><li>LinkedIn</li></a>
-                    <a href=""><li>Instagram</li></a>
-                    <a href=""><li>Facebook</li></a>
-                    <a href=""><li>Gmail</li></a>
-                    <a href=""><li>Youtube</li></a>
-                </ul>
-            </div>
+          <div id="list1">
+            <ul id="ul1">
+                <a href="" class="link"><li>Google</li></a>
+                <a href="" class="link"><li>LinkedIn</li></a>
+                <a href="" class="link"><li>Instagram</li></a>
+                <a href="" class="link"><li>Facebook</li></a>
+                <a href="" class="link"><li>Gmail</li></a>
+                <a href="" class="link"><li>Youtube</li></a>
+            </ul>
         </div>
+    </div>
     </div> 
         
 
@@ -84,7 +78,7 @@
          
        
        
-       <script src="js/Login.js"></script>
+       <script src="js/singup.js"></script>
         
 
     </body>

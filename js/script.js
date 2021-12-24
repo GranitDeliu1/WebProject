@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
   });
   
   function setBackgroundColor(color) {
-    document.getElementById("nav-bar").style.backgroundColor = color;
+    document.getElementById("myTopnav").style.backgroundColor = color;
     document.getElementById("footer").style.backgroundColor = color;
     document.getElementById("submitmsg").style.backgroundColor = color;
     document.getElementById("submitmsg").style.border = color;
@@ -34,3 +34,12 @@ window.addEventListener('DOMContentLoaded', function() {
   function setCookie(name, value) {
     document.cookie = name + '=' + value;
   }
+
+ function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

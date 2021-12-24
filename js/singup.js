@@ -15,8 +15,12 @@ window.addEventListener('DOMContentLoaded', function() {
   });
   
   function setBackgroundColor(color) {
-    document.getElementById("nav-bar").style.backgroundColor = color;
+    document.getElementById("myTopnav").style.backgroundColor = color;
     document.getElementById("footer").style.backgroundColor = color;
+    document.getElementById("span").style.backgroundColor = color;
+    document.getElementById("span1").style.backgroundColor = color;
+    document.getElementById("span2").style.backgroundColor = color;
+    document.getElementById("span3").style.backgroundColor = color;
     setCookie('backgroundColor', color);
   }
   
@@ -32,3 +36,13 @@ window.addEventListener('DOMContentLoaded', function() {
   function setCookie(name, value) {
     document.cookie = name + '=' + value;
   }
+
+  
+ function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
