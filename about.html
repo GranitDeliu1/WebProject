@@ -15,11 +15,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-    <style>
-        .parallax{
-            background-image: url('img/madara.jpg');
-        }
-    </style>
 
 <body>
     <div id="main-div">
@@ -35,21 +30,42 @@
 
 
         <div id="main-part">
-            <div style="background-image: url('img/ASL.jpg');" class="parallax">
-                <div id="text">
-                    <p>Scroll Up and Down this page to see the parallax scrolling effect.
-                        This div is just here to enable scrolling.
-                        Tip: Try to remove the background-attachment property to remove the scrolling effect.</p>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="img/slide1.png" style="width:100%">
                 </div>
-            </div>
-           
-            <div class="parallax" style="background-image: url('img/madara.jpg');">
-                <div id="text1">
-                    <p>Scroll Up and Down this page to see the parallax scrolling effect.
-                        This div is just here to enable scrolling.
-                        Tip: Try to remove the background-attachment property to remove the scrolling effect.</p>
+              
+                <div class="mySlides fade">
+                  <img src="img/slide2.png" style="width:100%">
                 </div>
-            </div>
+              
+                <div class="mySlides fade">
+                  <img src="img/slide3.png" style="width:100%">
+                </div>
+
+                <div id="container">
+                    <h2>STAFF</h2>
+                    <div id="staff">
+                        <div>
+                            <img src="img/granit.jpg" alt="">
+                            <h4>Granit Deliu</h4>
+                            <p>Granit Deliu is a student at University of Bussines and Technology.
+                               He is studying Computeric Science in second year of bachelor.
+                            </p>
+                        </div>
+                        <div>
+                        <img src="img/enes.jpg" alt="">
+                        <h4>Enes Shabani</h4>
+                        <p>Enes Shabani is a student at University of Bussines and Technology.
+                            He is studying Computeric Science in second year of bachelor.
+                         </p>
+                    </div>
+                    </div>
+                    
+                   
+                </div>
         </div>
 
         <div id="footer">
@@ -60,7 +76,6 @@
                     <a href="" class="link"><li>Instagram</li></a>
                     <a href="" class="link"><li>Facebook</li></a>
                     <a href="" class="link"><li>Gmail</li></a>
-                    <a href="" class="link"><li>Youtube</li></a>
                 </ul>
             </div>
         </div>

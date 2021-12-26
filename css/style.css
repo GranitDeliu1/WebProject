@@ -35,12 +35,12 @@ body{
   }
 
 .topnav #logo p{
-    margin-top: 10px;
-    margin-left: 200px;
+    font-size: 30px;
+    margin-left: 100px;
 }
 
 .topnav a:nth-child(2){
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 .topnav #logo{
@@ -115,18 +115,19 @@ body{
 
 #main-part{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 50px;
 }
 
 #colors{
-    height: 400px;
+    height: auto;
     margin-left: 80px;
 }
 
 #colors button{
     width: 100px;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 50%;
     padding: 10px;
     outline: none;
@@ -360,11 +361,155 @@ body{
         margin-top: -300px;
     }
 
-    #colors button{
-        display: inline;
-        margin-left: 20px;
+    #colors{
+        height: 200px;
+        margin-left: 95px;
+    }
+
+    #colors .color-btn{
+        display: inline-flex;
+        margin-left: 15px;
+    }
+
+    #main-posts{
+        width: 82%;
+        margin-top: 250px;
+    }
+
+    #chat{
+        margin-left: 220px;
+        margin-top: 50px;
+    }
+
+    #wrapper{
+        width: 350px;
+    }
+
+    #chatbox{
+        width: 250px;
+    }
+
+    #usermsg{
+        width: 230px;
     }
 }
+
+@media screen and (max-width:685px) {
+    #colors{
+        height: 150px;
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+
+    #colors button{
+        margin-left: 20px;
+        width: 80px;
+    }
+
+    #wrapper{
+        margin-left: -45px;
+    }
+
+    #chatbox{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:595px){
+    #colors{
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+
+    #wrapper{
+        margin-left: -75px;
+    }
+
+    #chatbox{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    #colors button{
+        margin-left: 0;
+        width: 70px;
+    }
+
+    #main-posts{
+        width: 85%;
+        margin-left: 60px;
+    }
+
+    #wrapper{
+        margin-left: -130px;
+    }
+}
+
+@media screen and (max-width:469px) {
+    #colors{
+        margin-left: 30px;
+        margin-top: 150px;
+    }
+    
+    #main-posts{
+        width: 85%;
+        margin-top: 200px;
+    }
+
+    #colors button{
+        width: 60px;
+    }
+
+    #wrapper{
+        margin-left: -150px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    #colors{
+        height: 100px;
+        margin-left: 0px;
+    }
+
+    #colors button{
+        width: 55px;
+    }
+
+    #wrapper{
+        width: 250px;
+    }
+
+    #chatbox{
+        width: 150px;
+    }
+
+    #usermsg{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:308px) {
+    #colors{
+        display: none;
+    }
+
+    #main-posts{
+        width: 85%;
+        margin-left:30px;
+        margin-top: 400px;
+    }
+
+    #wrapper{
+        margin-left: -190px;
+    }
+
+    #usermsg{
+        width: 140px;
+    }
+
+}
+
 
 /* footer */
 
@@ -409,4 +554,53 @@ body{
   
 #list1 .link:hover::after{
     width: 100%;
-  } 
+  }
+
+  @media screen and (max-width: 883px){
+      #ul1 a{
+        margin-right: 30px;
+        font-size: 15px;
+      }
+
+      #footer{
+          width: 85%;
+      }
+  }
+
+  @media screen and (max-width:385px){
+      #footer #ul1{
+          margin-top: 30px;
+          margin-left: -10px;
+      }
+
+      #footer #ul1 .link{
+          font-size: 10px;
+      }
+  }
+
+  @media screen and (max-width:308px) {
+    #footer{
+        height: 50px;
+      }  
+    
+    #footer #ul1 .link{
+          font-size: 7px;
+      }
+
+      #footer #ul1{
+          margin-top: 18px;
+      }
+     
+  }
+
+#credits{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 308px) {
+    #credits{
+        font-size: 10px;
+    }    
+}

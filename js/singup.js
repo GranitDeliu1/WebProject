@@ -37,7 +37,6 @@ window.addEventListener('DOMContentLoaded', function() {
     document.cookie = name + '=' + value;
   }
 
-  
  function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -46,3 +45,46 @@ window.addEventListener('DOMContentLoaded', function() {
     x.className = "topnav";
   }
 }
+
+function checkPassword(form) {
+
+  var password = document.getElementById('password').value;
+
+  //password minlength
+  if(password.length < 8){
+      document.getElementById('password').innerHTML = swal("Warning!", "Please enter more than 8 characters!", "warning");;
+      return false;
+  //password maxlength
+  } else if(password.length > 16){
+      document.getElementById('password').innerHTML = swal("Warning!", "Please enter less than 16 characters!", "warning");;
+      return false;
+  } 
+  
+  password1 = form.password1.value;
+  password2 = form.password2.value;
+
+  //if password is empty
+  if (password1 == ''){
+    swal("Warning!", "Please enter password!", "warning");
+      return false;
+  }
+  //if confirm password is empty
+  else if (password2 == ''){
+    swal("Warning!", "Please enter confirm password!", "warning");
+    return false;
+  }
+  //if any of password is incorrect
+  else if (password1 != password2) {
+    swal("Warning!", "Password is not matchy!", "warning");
+      return false;
+  }
+
+  //if everything is okay!!
+  else{
+      // alert("Password Match: Welcome to your account")
+      swal("Welcome!", "You registered successfuly!", "success");
+      return false;
+  }
+  
+}
+

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div id="main-div">
@@ -29,25 +30,25 @@
         <div id="main-part">
             <div class="signup-box">
                 <h2>Sign Up</h2>
-                <form>
+                <form onsubmit="return checkPassword(this)" onsubmit="validation">
                   <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input type="email" name="">
                     <label>Email</label>
                   </div>
                   <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input type="text" name="">
                     <label>Username</label>
                   </div>
                   <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password1" id="password">
                     <label>Password</label>
                   </div>
                   <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password2" >
                     <label>Confirm Password</label>
                   </div>
                   <div id="bg_buttons">
-                    <a href="" id="a">SUBMIT
+                   <a href="" id="a" type="submit" value="Submit"><input type="submit" value="Submit" onclick="myFunction()" id="input">
                       <span id="span"></span>
                       <span id="span1"></span>
                       <span id="span2"></span>
@@ -67,18 +68,13 @@
                 <a href="" class="link"><li>Instagram</li></a>
                 <a href="" class="link"><li>Facebook</li></a>
                 <a href="" class="link"><li>Gmail</li></a>
-                <a href="" class="link"><li>Youtube</li></a>
             </ul>
         </div>
     </div>
     </div> 
         
 
-
-         
-       
-       
-       <script src="js/singup.js"></script>
+      <script src="js/singup.js"></script>
         
 
     </body>
