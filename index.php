@@ -18,11 +18,11 @@
 <body>
     <div id="main-div">
         <div class="topnav" id="myTopnav">
-            <a href="index.html" id="logo"><p id="logo">Chattang</p></a>
-            <a href="index.html" class="link">Home</a>
-            <a href="about.html" class="link">About Us</a>
-            <a href="Login.html" class="link">Log In</a>
-            <a href="SignUP.html" class="link">Sign Up</a>
+            <a href="index.php" id="logo"><p id="logo">Chattang</p></a>
+            <a href="index.php" class="link">Home</a>
+            <a href="about.php" class="link">About Us</a>
+            <a href="Login.php" class="link">Log In</a>
+            <a href="SignUP.php" class="link">Sign Up</a>
 
             
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
