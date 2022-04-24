@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +25,28 @@
             <a href="index.php" id="logo"><p id="logo">Chattang</p></a>
             <a href="index.php" class="link">Home</a>
             <a href="about.php" class="link">About Us</a>
+            <!-- <a href="Login.php" class="link">Log In</a>
+            <a href="SignUP.php" class="link">Sign Up</a> -->
+
+            <?php
+                if(isset($_SESSION["id"])) {
+            ?>
+
+            <a href="includes/logout-inc.php">Logout</a>
+            <a href="#" class="link"><?php echo $_SESSION["username"]; ?></a>
+
+            <?php 
+                }
+                else
+                {
+            ?>
+
             <a href="Login.php" class="link">Log In</a>
             <a href="SignUP.php" class="link">Sign Up</a>
 
+            <?php  
+                }
+            ?>
             
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
           </div>

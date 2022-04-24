@@ -31,17 +31,17 @@
         <div id="main-part">
             <div class="login-box">
                 <h2>Login</h2>
-                <form>
+                <form action="includes/login-inc.php" method="post">
                   <div class="user-box">
-                    <input type="text" name="">
+                    <input type="text" name="username">
                     <label id="label">Username</label>
                   </div>
                   <div class="user-box">
-                    <input type="password" name="">
+                    <input type="password" name="password">
                     <label id="label1">Password</label>
                   </div>
                   <div id="buttons">
-                    <a href="" id="a" type="submit" value="Submit"><input type="submit" value="Submit" onclick="myFunction()" id="input">
+                    <a href="" id="a" type="submit" value="Submit"><input type="submit" name="submit" value="Submit" onclick="myFunction()" id="input">
                         <span id="span"></span>
                         <span id="span1"></span>
                         <span id="span2"></span>

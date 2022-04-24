@@ -46,3 +46,30 @@ window.addEventListener('DOMContentLoaded', function() {
     x.className = "topnav";
   }
 }
+
+function checkPassword(form) {
+
+  var password = document.getElementById('password').value;
+  
+  password1 = form.password1.value;
+
+  //if password is empty
+  if (password1 == ''){
+    swal("Warning!", "Please enter password!", "warning");
+      return false;
+  }
+
+  //if any of password is incorrect
+  else if (password1 != true) {
+    swal("Warning!", "Password is not matchy!", "warning");
+      return false;
+  }
+
+  //if everything is okay!!
+  else{
+      // alert("Password Match: Welcome to your account")
+      swal("Welcome!", "You registered successfuly!", "success");
+      return false;
+  }
+  
+}

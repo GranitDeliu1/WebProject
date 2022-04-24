@@ -30,31 +30,31 @@
         <div id="main-part">
             <div class="signup-box">
                 <h2>Sign Up</h2>
-                <form onsubmit="return checkPassword(this)" onsubmit="validation">
+                <form action="includes/signup-inc.php" method="post" onsubmit="return checkPassword(this)" onsubmit="validation">
                   <div class="user-box">
-                    <input type="email" name="">
+                    <input type="email" name="email">
                     <label>Email</label>
                   </div>
                   <div class="user-box">
-                    <input type="text" name="">
+                    <input type="text" name="username">
                     <label>Username</label>
                   </div>
                   <div class="user-box">
-                    <input type="password" name="password1" id="password">
+                    <input type="password" name="password" id="password">
                     <label>Password</label>
                   </div>
                   <div class="user-box">
-                    <input type="password" name="password2" >
+                    <input type="password" name="confirmPassword" >
                     <label>Confirm Password</label>
                   </div>
                   <div id="bg_buttons">
-                   <a href="" id="a" type="submit" value="Submit"><input type="submit" value="Submit" onclick="myFunction()" id="input">
+                   <a href="" id="a" type="submit" value="Submit"><input type="submit" name="submit" value="Submit" onclick="myFunction()" id="input">
                       <span id="span"></span>
                       <span id="span1"></span>
                       <span id="span2"></span>
                       <span id="span3"></span>
                     </a>
-                    <a href="Login.html" id="b">Alreay have an account? Log In!</a>
+                    <a href="Login.php" id="b">Alreay have an account? Log In!</a>
                   </div>
                 </form>
               </div>
